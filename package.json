@@ -1,0 +1,27 @@
+{
+  "name": "projectuser",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/platinum-otabek/projectuser.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/platinum-otabek/projectuser/issues"
+  },
+  "homepage": "https://github.com/platinum-otabek/projectuser#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.17",
+    "pug": "^3.0.0"
+  }
+}
