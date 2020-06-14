@@ -2,15 +2,15 @@ extends layout
 block content
     div.m-5
         h1 #{title}    
-        form(action="/users/add", method="post")
+        form(action="/books/add", method="post")
             .form-group 
                 label(for="") Title
                 input.form-control(type="text", name="title")
-            .form-group 
-                label(for="") Author
-                input.form-control(type="text", name="author")
+            //.form-group
+            //    label(for="") Author
+            //    input.form-control(type="text", name="author")
             .form-group 
                 label(for="") body
-                textarea.form-control(name="body", cols="10", rows="7")
+                textarea.form-control(name="body")
             input.btn.btn-success(type="submit", value="submit")
         

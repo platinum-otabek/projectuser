@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
-
+const config = require('../config/database');
 module.exports = () => {
 
-    mongoose.connect('mongodb://localhost/user', {
+    mongoose.connect(config.database, {
         useNewUrlParser: true,
         useUnifiedTopology: true,
         useFindAndModify:false

@@ -1,0 +1,17 @@
+extends layout
+block content
+    div.m-5
+        h1 #{title}    
+        form(action="/book/edit/" + book._id, method="post")
+            .form-group 
+                label(for="") Title
+                input.form-control(type="text", name="title" value="" + book.title)
+            .form-group 
+                label(for="") Author
+                input.form-control(type="text", name="author" value="" + book.author)
+            .form-group 
+                label(for="") body
+                textarea.form-control(name="body", cols="10", rows="7")= book.body
+            br
+            input.btn.btn-success(type="submit", value="submit")
+        

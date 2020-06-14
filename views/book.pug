@@ -1,0 +1,12 @@
+extends layout
+
+block content
+    h1= book.title
+    h4 Yozuvchi: #{author}
+    p= book.body
+    hr
+    if user
+        if user.id === book.author
+            a.btn.btn-warning.mr-1(href='/book/edit/' + book._id) O`zgartirish
+            a.btn.btn-danger.delete-book(href='#' data-id=book._id) O`chirish
+    
